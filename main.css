@@ -1,5 +1,5 @@
 html {
-    background: #bbc3c6;
+    background: #2d373a;
     font: 62.5%/1.5em "Trebuchet Ms", helvetica;
   }
   
@@ -7,21 +7,7 @@ html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-  }
-  
-  @font-face {
-      font-family: 'Shopper';
-      src: url('http://www.shopperfont.com/font/Shopper-Std.ttf');
-  }
-  
-  .shopper {
-    text-transform: lowercase;
-    font: 2em 'Shopper', sans-serif;
-    line-height: 0.5em;
-    display: inline-block;
-  }
-  
-  
+  }  
   
   h1 {
     text-transform: uppercase;
@@ -70,17 +56,12 @@ html {
     position: relative;
     z-index: 1;
     color: #f7f7f7;
-    background: #f34d35;
+    background: #80d1f1;
   }
   
   .cart {
     margin: 2.5em;
     overflow: hidden;
-  }
-  
-  .cart.is-closed {
-    height: 0;
-    margin-top: -2.5em;
   }
   
   .table {
@@ -101,7 +82,7 @@ html {
   }
   
   .th {
-    background: #f34d35;
+    background: #80d1f1;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -109,7 +90,7 @@ html {
   }
   
   .tf {
-    background: #f34d35;
+    background: #80d1f1;
     text-transform: uppercase;
     text-align: right;
     font-size: 1.2em;  
@@ -156,17 +137,6 @@ html {
   
   .row-bg2 {
     background: #f7f7f7;
-  }
-  
-  .visibility-cart {
-    position: absolute;
-    color: #fff;
-    top: 0.5em;
-    right: 0.5em;
-    font:  bold 2em arial;
-    border: 0.16em solid #fff;
-    border-radius: 2.5em;
-    padding: 0 0.22em 0 0.25em ;
   }
   
   .col-qty > * {
