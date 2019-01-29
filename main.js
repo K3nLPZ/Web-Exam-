@@ -1,4 +1,4 @@
-      // SHOPPING CART PLUS OR MINUS
+      // Plus and Minus
       $('a.qty-minus').on('click', function(e) {
           e.preventDefault();
           var $this = $(this);
@@ -30,7 +30,7 @@
           $input.val(value);
       });
   
-  // RESTRICT INPUTS TO NUMBERS ONLY WITH A MIN OF 0 AND A MAX 100
+  // Inputs can only be numbers// min of 0 and max of 100
   $('input').on('blur', function(){
   
       var input = $(this);
