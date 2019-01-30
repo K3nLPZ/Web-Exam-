@@ -101,15 +101,15 @@ function sumar () {
 
 }
 
-function refreshScores(){
-    let dataList = document.getElementById("total");
-    dataList.innerHTML=null;
+// function refreshScores(){
+//     let dataList = document.getElementById("total");
+//     dataList.innerHTML=null;
 
-    // while (dataList.childElementCount > 1){
-    //     dataList.removeChild(dataList.lastChild);
-    // }
-    //loadDataGrid();
-}
+//     // while (dataList.childElementCount > 1){
+//     //     dataList.removeChild(dataList.lastChild);
+//     // }
+//     //loadDataGrid();
+// }
 
  
 
