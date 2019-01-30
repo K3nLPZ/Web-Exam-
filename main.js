@@ -1,47 +1,21 @@
-      // Plus and Minus
-      $('a.qty-minus').on('click', function(e) {
-          e.preventDefault();
-          var $this = $(this);
-          var $input = $this.closest('div').find('input');
-          var value = parseInt($input.val());
-      
-          if (value > 1) {
-              value = value - 1;
-          } else {
-              value = 0;
-          }
-      
-      $input.val(value);
-          
-      });
+function increaseValue(i) {
+    var value = parseInt(document.getElementById('number'+i).value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number'+i).value = value;
+  }
   
-      $('a.qty-plus').on('click', function(e) {
-          e.preventDefault();
-          var $this = $(this);
-          var $input = $this.closest('div').find('input');
-          var value = parseInt($input.val());
-  
-          if (value < 100) {
-          value = value + 1;
-          } else {
-              value =100;
-          }
-  
-          $input.val(value);
-      });
-  
-  // Inputs can only be numbers// min of 0 and max of 100
-  $('input').on('blur', function(){
-  
-      var input = $(this);
-      var value = parseInt($(this).val());
-  
-          if (value < 0 || isNaN(value)) {
-              input.val(0);
-          } else if
-              (value > 100) {
-              input.val(100);
-          }
-  });
+  function decreaseValue(i) {
+    var value = parseInt(document.getElementById('number'+i).value, 10);
+    value = isNaN(value) ? 0 : value;
+    value < 1 ? value = 1 : '';
+    value--;
+    document.getElementById('number'+i).value = value;
+  }
+
+
+  function mess() {
+    alert("Thank you for your purchase");
+  }
 
   
