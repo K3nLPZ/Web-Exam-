@@ -21,25 +21,25 @@
   
   <div class="cart transaction">
     
-    <a href="#" class="btn btn-update">Continue</a>
+    <a href="#" class="btn btn-update" onclick="addCar()">Continue</a>
     
     
     <div class="table">
       
       <div class="layout-inline row th">
         <div class="col col-pro">Product Catalog</div>
-        <div class="col col-price align-center ">Price</div>
+        <div class="col col-price align-center ">Price $</div>
         <div class="col col-qty align-center">QTY</div>
       </div>
       
       <div class="layout-inline row">
         
         <div class="col col-pro layout-inline">
-          <p>Apples</p>
+          <p id="product0">Apples</p>
         </div>
         
         <div class="col col-price col-numeric align-center ">
-          <p>$1.5</p>
+          <p id="price0">1.5</p>
         </div>
 
         <div class="col col-qty layout-inline">
@@ -52,11 +52,11 @@
       <div class="layout-inline row row-bg2">
 
         <div class="col col-pro layout-inline">
-          <p>Oranges</p>
+          <p id="product1">Oranges</p>
         </div>
         
         <div class="col col-price col-numeric align-center ">
-          <p>$1.00</p>
+          <p id="price1">1.00</p>
         </div>
 
         <div class="col col-qty  layout-inline">
@@ -69,11 +69,11 @@
        <div class="layout-inline row">
         
         <div class="col col-pro layout-inline">
-          <p>Grapes</p>
+          <p id="product2">Grapes</p>
         </div>
         
         <div class="col col-price col-numeric align-center ">
-          <p>$0.75</p>
+          <p id="price2">0.75</p>
         </div>
 
         <div class="col col-qty layout-inline">
@@ -88,7 +88,9 @@
            <div class="col">
              <p>Total</p>
            </div>
-           <div class="col"></div>
+           <div class="col" text-align="center">
+              <p type="numeric" id="total"></p>
+           </div>
          </div>
        </div>         
   </div>
